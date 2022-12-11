@@ -394,6 +394,310 @@ body a:active, body a:focus, body a:visited, body a:hover {
     background: #030303;
 }
 
+.delivery-info-component .opening-time-message.open {
+    color: #8fd000;
+}
+
+.Phone_Phone__3rwt8 a {
+    color: var(--primaryTextColor);
+}
+
+.preparation-row {
+    align-items: center;
+    display: flex;
+}
+
+.delivery-info-component .ifa{
+    margin-right: 10px;
+    text-align: left;
+    width: 15px;
+}
+
+/* .delivery-info-component .paysystem-images {
+    justify-content: flex-start;
+    margin-top: 5px;
+    padding: 0;
+    width: auto;
+} */
+
+.basket-component {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #030303;
+}
+
+.basket-component .heading {
+    font-family: Roboto Condensed,Roboto,sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #007333;
+}
+
+.delivery-switch-desktop {
+    display: flex;
+    flex: 0 0 30px;
+    height: 30px;
+    justify-content: center;
+    margin: 12px 10px 0;
+    padding: 0;
+    position: relative;
+}
+
+.basket-component .delivery-switch-desktop .switch {
+    background: #030303;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.delivery-switch-desktop .switch {
+    background-clip: padding-box;
+    border: 1px solid;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    font-family: Roboto,sans-serif;
+    font-size: 14px;
+    height: 30px;
+    list-style: none;
+    min-width: 160px;
+    overflow: auto;
+    width: 100%;
+}
+
+.basket-component .delivery-switch-desktop .switch .active {
+    background: #fff;
+    color: #030303;
+}
+
+.delivery-switch-desktop .switch span {
+    clear: both;
+    display: block;
+    flex-basis: 50%;
+    flex-grow: 1;
+    font-weight: 400;
+    height: 100%;
+    line-height: 1.42857143;
+    padding: 3px 20px;
+    text-align: center;
+    transition: background .28s, -webkit-transform .28s;
+    transition: background .28s, transform .28s;
+    transition: background .28s, transform .28s, -webkit-transform .28s;
+    white-space: nowrap;
+    width: 50%;
+}
+
+.empty-basket {
+    align-items: stretch;
+    display: flex;
+    flex: 1 0 auto;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align: center;
+    background-color: #030303;
+}
+
+.empty-basket .icon-wrapper {
+    align-items: center;
+    display: flex;
+    flex: 1 1 auto;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.empty-basket .title {
+    font-family: Roboto Condensed,Roboto,sans-serif;
+    font-size: 17px;
+    font-stretch: condensed;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+
+.empty-basket .chef {
+    margin-bottom: 12px;
+    margin-top: 33px;
+}
+
+.empty-basket hr {
+    border-bottom: 0;
+    border-style: solid;
+    border-width: 1px;
+    margin: 7px;
+    margin-top: 35px;
+    border-color: #fff;
+}
+
+.empty-basket .total {
+    display: flex;
+    flex-direction: column;
+    font-family: OpenSans,sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.discount {
+    align-items: center;
+    display: flex;
+    font-family: OpenSans,sans-serif;
+    font-weight: 700;
+    padding: 5px 5px 5px 10px;
+    width: 100%;
+    background: #eb5635;
+    color: #fff;
+}
+
+.empty-basket .total .sum {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    color: #fff;
+}
+
+.to-order-component {
+    margin-top: auto;
+    padding: 10px;
+    background-color: #030303;
+}
+
+.to-order-component .button-container button.disabled {
+    background: #e6e6e6;
+    border-color: #e6e6e6;
+}
+
+.button-order {
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    margin: 0;
+    outline: none;
+    padding: 0;
+    align-items: center;
+    border-radius: 4px;
+    display: flex;
+    font-family: Roboto Condensed,Roboto,sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    height: 30px;
+    justify-content: center;
+    line-height: normal;
+    position: relative;
+    text-align: center;
+    transition: background .28s, color .28s;
+    width: 100%;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+}
+
+.to-order-component .button-order {
+    font-family: Roboto,sans-serif;
+    height: 40px;
+}
+
+.button-order[disabled] {
+    color: #ccc !important;
+    background: #e6e6e6 !important;
+    border-color: #e6e6e6 !important;
+}
+
+.paysystem-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding: 0 15px;
+    margin: 10px 0 15px 0;
+}
+
+.to-order-component .paysystem-images img {
+    height: 20px;
+    padding: 0 5px;
+    margin-left: 5px;
+    mix-blend-mode: luminosity;
+    opacity: 0.5;
+}
+
+.widget-wrapper {
+    margin-bottom: 40px;
+    margin-top: 40px;
+    background-color: #030303;
+}
+
+.app-widget {
+    width: 100%;
+    margin: 3px 0;
+}
+
+.app-widget .app-widget-title {
+    font-family: Roboto,sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+
+.app-widget .btns {
+    background-image: url(../images/background-wed.png);
+    background-position: 44px 0;
+    background-size: cover;
+    height: 220px;
+}
+
+#app-widget .bottom-info {
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: Roboto,sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    height: 40px;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    background: #007333;
+    color: #fff;
+}
+
+.app-widget .btns .qr-code {
+    margin-left: 25px;
+    width: 120px;
+}
+
+.app-widget .btns .app-img img {
+    margin-bottom: 0;
+    margin-left: 20px;
+    margin-top: 4px;
+    width: 120px;
+}
+
+.app-widget .bottom-info {
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: Roboto,sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    height: 40px;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    background: #007333;
+    color: #fff;
+    margin: 0 0 5px 0;
+}
+
+.right-side-block .bottom-text {
+    font-family: Roboto,sans-serif;
+    font-size: 12px;
+    line-height: 36px;
+    margin-top: 10px;
+    text-align: center;
+}
+
 .footer{
     background: #e40014;
 }
