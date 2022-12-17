@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>desktop mode website</title>
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/all.min.css">
-    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
   </head>
   <body>
     <div class="app">
-    <div class="app-wrapper">
+    <div class="app-wrapper desktop-app-wrapper">
       <div class="desktop-wrapper">
         <div class="left-bg"></div>
         <div class="main-wrapper">
@@ -171,12 +171,10 @@
                       Küche.
                     </p>
                   </section>
-                  <section
-                    class="desktop-homepage-section desktop-homepage-categories"
-                  >
+                  <section class="desktop-homepage-section desktop-homepage-categories">
                     <h2>Our dishes</h2>
                     <div class="list">
-                      <div class="item-wrapper">
+                      <div class="item-wrapper" data-content=".Salate">
                         <a class="item" href="#">
                           <div class="img-wrapper">
                             <img src="images/category1.jpg" alt="Salate" />
@@ -184,7 +182,7 @@
                           <span class="title">Salate</span>
                         </a>
                       </div>
-                      <div class="item-wrapper">
+                      <div class="item-wrapper" data-content=".Pizzabrötchen">
                         <a class="item" href="#">
                           <div class="img-wrapper">
                             <img
@@ -195,7 +193,7 @@
                           <span class="title">Pizzabrötchen</span>
                         </a>
                       </div>
-                      <div class="item-wrapper">
+                      <div class="item-wrapper" data-content=".Pasta">
                         <a class="item" href="#">
                           <div class="img-wrapper">
                             <img src="images/category3.jpg" alt="Pasta" />
@@ -203,7 +201,7 @@
                           <span class="title">Pasta</span>
                         </a>
                       </div>
-                      <div class="item-wrapper">
+                      <div class="item-wrapper" data-content=".Pizza">
                         <a class="item" href="#">
                           <div class="img-wrapper">
                             <img src="images/category4.jpg" alt="Pizza" />
@@ -211,7 +209,7 @@
                           <span class="title">Pizza</span>
                         </a>
                       </div>
-                      <div class="item-wrapper">
+                      <div class="item-wrapper" data-content=".Desserts">
                         <a class="item" href="#">
                           <div class="img-wrapper">
                             <img src="images/category5.jpg" alt="Desserts" />
@@ -219,7 +217,7 @@
                           <span class="title">Desserts</span>
                         </a>
                       </div>
-                      <div class="item-wrapper">
+                      <div class="item-wrapper" data-content=".Alkoholfreie-Getränke">
                         <a class="item" href="#">
                           <div class="img-wrapper">
                             <img
@@ -230,7 +228,7 @@
                           <span class="title">Alkoholfreie Getränke</span>
                         </a>
                       </div>
-                      <div class="item-wrapper">
+                      <div class="item-wrapper" data-content=".Alkoholische-Getränke">
                         <a class="item" href="#">
                           <div class="img-wrapper">
                             <img
@@ -243,9 +241,7 @@
                       </div>
                     </div>
                   </section>
-                  <section
-                    class="desktop-homepage-section desktop-homepage-delivery"
-                  >
+                  <section class="desktop-homepage-section desktop-homepage-delivery">
                     <h2>We delivery to</h2>
                     <div class="list">
                       <div class="item">Kiel</div>
@@ -1166,7 +1162,7 @@
                     <i class="ifa fa-solid fa-basket-shopping"></i>
                     <span class="delivery-info-text">Minimum order amount 0,00 €</span>
                   </div>
-                  <div class="Phone_Phone__3rwt8">
+                  <div class="Phone-Phone">
                     <i class="ifa fa-solid fa-phone"></i>
                     <a href="#">043171749988</a>
                   </div>
@@ -1295,6 +1291,9 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="app-wrapper mobile-app-wrapper mobile-view">
+
     </div>
     </div>
     <script src="js/all.min.js"></script>

@@ -39,7 +39,7 @@ body a:active, body a:focus, body a:visited, body a:hover {
     display: flex;
     flex-flow: column nowrap;
 }
-
+ /* start style with desktop mode */
 .app-wrapper .desktop-wrapper{
     background-image: url("../images/background.jpg");
     display: flex;
@@ -235,19 +235,41 @@ body a:active, body a:focus, body a:visited, body a:hover {
     transition: .44s;
 }
 
-.category-wrapper .active{
+.activespan{
     font-size: 14px;
     color: #05ee6e;
     font-weight: 600;
+    transition: .44s;
 }
+
+/* .categories-menu-wrapper .category-menu-desktop-hermes-theme a:focus span.active{
+    font-size: 14px;
+    color: #05ee6e;
+    font-weight: 600;
+    transition: .44s;
+} */
+
 
 .categories-menu-wrapper .category-menu-desktop-hermes-theme a:focus .fff,
 .categories-menu-wrapper .category-menu-desktop-hermes-theme a:hover .fff{
     color: #05ee6e;
     transform: rotate(60deg);
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bolder;
 }
+.activeicon{
+    color: #05ee6e;
+    transform: rotate(60deg);
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+/* .categories-menu-wrapper .category-menu-desktop-hermes-theme a:focus i.active{
+    color: #05ee6e;
+    transform: rotate(60deg);
+    font-size: 12px;
+    font-weight: bolder;
+} */
 
 .main-wrapper .row2 .categories-Wrapper .homepage-desktop{
     width: 100%;
@@ -456,6 +478,10 @@ body a:active, body a:focus, body a:visited, body a:hover {
     border-bottom-color: #e40014;
 }
 
+.product-small-picture-container:hover{
+    background: rgba(50, 50, 50, 0.8);
+}
+
 .product-small-picture-container .product-small-picture-wrapper {
     display: flex;
 }
@@ -580,6 +606,10 @@ body a:active, body a:focus, body a:visited, body a:hover {
     color: #fff;
 }
 
+.product-standard-button-container:hover{
+    background: rgb(131, 9, 9,0.8);
+}
+
 .product-standard-button-container .left-plus {
     align-items: center;
     border-right: 1px solid;
@@ -636,7 +666,7 @@ body a:active, body a:focus, body a:visited, body a:hover {
     color: #8fd000;
 }
 
-.Phone_Phone__3rwt8 a {
+.Phone-Phone a {
     color: var(--primaryTextColor);
 }
 
@@ -881,7 +911,7 @@ body a:active, body a:focus, body a:visited, body a:hover {
     height: 220px;
 }
 
-#app-widget .bottom-info {
+.app-widget .bottom-info {
     -ms-flex-align: center;
     align-items: center;
     display: -ms-flexbox;
@@ -994,3 +1024,6 @@ body .container {
 .footer .footer-wrapper .item+ .item{
     margin-top: 15px;
 }
+/* finish style with desktop mode */
+
+/* start style with mobile mode */
