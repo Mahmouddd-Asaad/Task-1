@@ -18,4 +18,9 @@ $(function () {
         $('.product-desktop-main-container').hide();
         $('.all-product' +' '+ $(this).data('content')).fadeIn();
     });
+
+    $('.btn-group .switch span').on('click',function(){
+        $('.btn-group .switch span').removeClass('active');
+        $(this).addClass('active');
+    });
 });
