@@ -12,6 +12,7 @@ body{
     height: 100%;
     text-decoration: none;
     margin: 0;
+    font-variant: tabular-nums;
 }
 
 body a {
@@ -275,16 +276,23 @@ body a:active, body a:focus, body a:visited, body a:hover {
     width: 100%;
 }
 
+.homepage-mobile .mobile-homepage-section,
 .homepage-desktop .desktop-content .desktop-homepage-section{
     color: #fff;
     background: #030303;
 }
 
-.homepage-desktop .desktop-content .homepage-seotext{
+/* .homepage-desktop .desktop-content  */
+.homepage-seotext{
     font-family: Roboto,sans-serif;
     padding: 0 5px 10px;
 }
 
+.homepage-seotext p{
+    margin: 0;
+    padding: 0 12px;
+}
+.homepage-mobile .mobile-homepage-section .homepage-title,
 .homepage-desktop .desktop-content .homepage-seotext .homepage-title{
     color: #fff;
     font-size: 21px;
@@ -294,7 +302,7 @@ body a:active, body a:focus, body a:visited, body a:hover {
     text-transform: uppercase;
     width: 100%;
 }
-
+.homepage-mobile .mobile-homepage-section h2,
 .homepage-desktop .desktop-content .desktop-homepage-section h2{
     color: #fff;
     align-items: center;
@@ -313,16 +321,16 @@ body a:active, body a:focus, body a:visited, body a:hover {
     margin: 0;
     padding: 0 12px;
 }
-
+.homepage-mobile .homepage-seotext .homepage-anchors,
 .homepage-desktop .homepage-seotext .homepage-anchors{
     padding: 0 12px;
 }
-
+.homepage-mobile .homepage-seotext .homepage-anchors a,
 .homepage-desktop .homepage-seotext .homepage-anchors a{
     color: #fff;
     padding-bottom: 2px;
 }
-
+.homepage-mobile .homepage-seotext .homepage-anchors a:hover ,
 .homepage-desktop .homepage-seotext .homepage-anchors a:hover{
     text-decoration: underline;
 }
@@ -1027,3 +1035,215 @@ body .container {
 /* finish style with desktop mode */
 
 /* start style with mobile mode */
+زapp-wrapper.mobile-view {
+    overflow: hidden;
+}
+
+.app-state-mobile-wrapper {
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+    padding: 0;
+}
+
+.sticky-header-mobile {
+    font-family: inherit;
+    height: 44px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    z-index: 100;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    height: 44px;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    min-height: 44px;
+    overflow: hidden;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    color: #fff;
+    background: #e40014;
+}
+
+.sticky-header-mobile .branch-name {
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 1;
+    flex: 1;
+    font-family: Roboto Condensed,Roboto,sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    max-height: 27px;
+    opacity: 1;
+    overflow: hidden;
+    padding-left: 12px;
+    transition: 0.5s opacity;
+    transition-timing-function: ease-in;
+    white-space: nowrap;
+    color: #fff;
+}
+
+.sticky-header-mobile .menu-toggle-btn {
+    -ms-flex-align: center;
+    align-items: center;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 28px;
+    height: 44px;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-width: 44px;
+    outline: none;
+    width: 44px;
+    color: #fff;
+}
+
+.sticky-header-mobile .branch-name .branch-name-title {
+    font-size: 18px;
+    font-weight: 700;
+    overflow-x: hidden;
+    padding-right: 12px;
+    text-overflow: ellipsis;
+    color: #fff;
+}
+
+.phone-number-mobile {
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: Roboto Condensed,Roboto,sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    height: 44px;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    overflow: hidden;
+    padding: 0 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background: #030303 !important;
+    padding: 0 12px;
+}
+
+.phone-number-mobile .phone span,
+.phone-number-mobile .phone .mph {
+    color: #fff !important;
+}
+
+.phone-number-mobile .phone > a .mph {
+    margin-right: 6px;
+}
+
+.mobile-homepage-section {
+    font-family: Roboto Condensed,Roboto,sans-serif;
+    padding: 20px 0;
+}
+
+.mobile-homepage-section h2 {
+    padding: 11px 12px;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: inherit;
+    font-weight: 300;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    padding: 11px 10px;
+    width: 100%;
+}
+
+.mobile-homepage-section:not(:first-child) {
+    margin-top: -44px;
+    padding: 68px 0 24px;
+}
+
+.mobile-homepage-categories {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.mobile-homepage-categories .list {
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 12px;
+}
+
+.mobile-homepage-categories .item-wrapper {
+    flex: 0 0 50%;
+    margin-bottom: 10px;
+}
+
+.mobile-homepage-categories .item-wrapper:nth-child(odd) {
+    padding-right: 5px;
+}
+
+.mobile-homepage-categories .item {
+    background: #efefef;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+}
+
+.mobile-homepage-categories .img-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+}
+
+.mobile-homepage-categories .img-wrapper img {
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+}
+
+.mobile-homepage-categories .title {
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+    align-items: center;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-start;
+    left: 0;
+    padding: 5px 10px;
+    position: absolute;
+    transition: background .28s;
+    width: 100%;
+}
+
+.mobile-homepage-delivery .list {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0 12px;
+}
+
+.mobile-homepage-delivery .item {
+    color: #fff;
+    font-size: 18px;
+    width: 100%;
+}
