@@ -1025,7 +1025,8 @@ body .container {
     width: 100%;
 }
 
-.footer .footer-wrapper .item,.footer .footer-wrapper .item li a{
+.footer .footer-wrapper .item,
+.footer .footer-wrapper .item li a{
     color: rgba(255, 255, 255, 0.8);
 }
 
@@ -1035,7 +1036,7 @@ body .container {
 /* finish style with desktop mode */
 
 /* start style with mobile mode */
-زapp-wrapper.mobile-view {
+.app-wrapper.mobile-view {
     overflow: hidden;
 }
 
@@ -1051,17 +1052,12 @@ body .container {
     font-family: inherit;
     height: 44px;
     position: sticky;
-    position: -webkit-sticky;
     top: 0px;
-    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     z-index: 100;
-    -ms-flex-align: center;
     align-items: center;
-    display: -ms-flexbox;
     display: flex;
     height: 44px;
-    -ms-flex-pack: justify;
     justify-content: space-between;
     min-height: 44px;
     overflow: hidden;
@@ -1071,16 +1067,12 @@ body .container {
 }
 
 .sticky-header-mobile .branch-name {
-    -ms-flex-align: center;
     align-items: center;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex: 1;
     flex: 1;
     font-family: Roboto Condensed,Roboto,sans-serif;
     font-size: 18px;
     font-weight: 700;
-    -ms-flex-pack: start;
     justify-content: flex-start;
     max-height: 27px;
     opacity: 1;
@@ -1093,16 +1085,13 @@ body .container {
 }
 
 .sticky-header-mobile .menu-toggle-btn {
-    -ms-flex-align: center;
     align-items: center;
     background: transparent;
     border: none;
     box-shadow: none;
-    display: -ms-flexbox;
     display: flex;
     font-size: 28px;
     height: 44px;
-    -ms-flex-pack: center;
     justify-content: center;
     min-width: 44px;
     outline: none;
@@ -1120,15 +1109,12 @@ body .container {
 }
 
 .phone-number-mobile {
-    -ms-flex-align: center;
     align-items: center;
-    display: -ms-flexbox;
     display: flex;
     font-family: Roboto Condensed,Roboto,sans-serif;
     font-size: 18px;
     font-weight: 700;
     height: 44px;
-    -ms-flex-pack: start;
     justify-content: flex-start;
     overflow: hidden;
     padding: 0 10px;
@@ -1154,13 +1140,10 @@ body .container {
 
 .mobile-homepage-section h2 {
     padding: 11px 12px;
-    -ms-flex-align: center;
     align-items: center;
-    display: -ms-flexbox;
     display: flex;
     font-family: inherit;
     font-weight: 300;
-    -ms-flex-pack: start;
     justify-content: flex-start;
     margin-bottom: 10px;
     padding: 11px 10px;
@@ -1178,7 +1161,6 @@ body .container {
 }
 
 .mobile-homepage-categories .list {
-    display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
     padding: 0 12px;
@@ -1215,7 +1197,6 @@ body .container {
 
 .mobile-homepage-categories .img-wrapper img {
     height: 100%;
-    -o-object-fit: cover;
     object-fit: cover;
     width: 100%;
 }
@@ -1246,4 +1227,8 @@ body .container {
     color: #fff;
     font-size: 18px;
     width: 100%;
+}
+
+.mobile-view .footer .footer-wrapper{
+    margin-left: 15px;
 }
