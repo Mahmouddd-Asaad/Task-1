@@ -1,10 +1,10 @@
-@media (min-width: 1000px){
+@media (min-width: 1029px){
     .mobile-app-wrapper{
         display: none !important;
     }
 }
 
-@media (max-width: 999px){
+@media (max-width: 1028px){
     .desktop-app-wrapper{
         display: none !important;
     }
