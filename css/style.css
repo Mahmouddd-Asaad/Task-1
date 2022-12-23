@@ -916,21 +916,20 @@ body a:active, body a:focus, body a:visited, body a:hover {
 
 .app-widget .btns {
     background-image: url(../images/background-wed.png);
-    background-position: 44px 0;
-    background-size: cover;
+    background-position: 10px 30px 10px 0px;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: contain;
     height: 220px;
 }
 
 .app-widget .bottom-info {
-    -ms-flex-align: center;
     align-items: center;
-    display: -ms-flexbox;
     display: flex;
     font-family: Roboto,sans-serif;
     font-size: 15px;
     font-weight: bold;
     height: 40px;
-    -ms-flex-pack: center;
     justify-content: center;
     text-align: center;
     width: 100%;
@@ -1528,4 +1527,66 @@ elem-derivative {
 .ProductSmallPictureMobile .card-content 
 .product-description p {
     margin: 10px 0;
+}
+
+.mobile-footer {
+    color: #ffffff;
+    font-family: Roboto Condensed,Roboto,sans-serif;
+    font-size: 18px;
+    padding: 30px 12px 80px;
+}
+
+.mobile-footer .title {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.mobile-footer .block {
+    margin-bottom: 15px;
+}
+
+.mobile-footer .item {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.widget-wrapper {
+    margin-bottom: 40px;
+    margin-top: 40px;
+    background: #030303;
+}
+
+.shopping-cart-panel-wrapper.mobile {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 11;
+    padding: 20px 12px 12px 12px;
+}
+
+.shopping-cart-panel-wrapper .shopping-cart-panel {
+    align-items: center;
+    border-radius: 4px;
+    display: flex;
+    font-family: Roboto,sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    justify-content: space-between;
+    padding: 0 10px;
+    width: 100%;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+}
+
+.shopping-cart-panel{
+    background: #007333;
+    color: #fff
+}
+
+.shopping-cart-panel-wrapper .shopping-cart-panel .info {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
 }
