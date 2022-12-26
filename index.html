@@ -11,6 +11,7 @@
   </head>
   <body>
     <div class="app">
+      <!-- start desktop mode -->
       <div class="app-wrapper desktop-app-wrapper">
         <div class="desktop-wrapper">
           <div class="left-bg"></div>
@@ -1665,9 +1666,12 @@
           </div>
         </div>
       </div>
+      <!-- end desktop mode -->
+
+      <!-- start mobile and tablet mode -->
       <div class="app-wrapper mobile-app-wrapper mobile-view">
         <div class="app-state-mobile-wrapper">
-          <div class="homepage-mobile" style="display: none">
+          <div class="homepage-mobile">
             <div class="sticky-header-mobile">
               <div class="branch-name">
                 <h1 class="branch-name-title">Casa del Gusto Kiel</h1>
@@ -1874,7 +1878,7 @@
               </div>
             </div>
           </div>
-          <div class="main-content-mobile">
+          <div class="main-content-mobile" style="display: none;">
             <div class="sticky-header-mobile">
               <div class="branch-name">
                 <h1 class="branch-name-title">Casa del Gusto Kiel</h1>
@@ -1944,23 +1948,29 @@
             <div class="category-slider">
               <div class="category-slider">
                 <div class="swiper-wrapper">
-                  <div
-                    class="swiper-slide slider-link slider-link-active swiper-slide-active"
-                  >
-                    Antipasti
+                  <div class="swiper-slide slider-link slider-link-active swiper-slide-active">
+                    <a href="#" data-content="Antipasti" class="active">Antipasti</a>
                   </div>
                   <div class="swiper-slide slider-link swiper-slide-next">
-                    Salate
-                  </div>
-                  <div class="swiper-slide slider-link">Pizzabrötchen</div>
-                  <div class="swiper-slide slider-link">Pizza</div>
-                  <div class="swiper-slide slider-link">Pasta</div>
-                  <div class="swiper-slide slider-link">Desserts</div>
-                  <div class="swiper-slide slider-link">
-                    Alkoholfreie Getränke
+                    <a href="#" data-content="Salate">Salate</a> 
                   </div>
                   <div class="swiper-slide slider-link">
-                    Alkoholische Getränke
+                    <a href="#" data-content="Pizzabrötchen">Pizzabrötchen</a>
+                  </div>
+                  <div class="swiper-slide slider-link">
+                    <a href="#" data-content="Pizza">Pizza</a>
+                  </div>
+                  <div class="swiper-slide slider-link">
+                    <a href="#" data-content="Pasta">Pasta</a>
+                  </div>
+                  <div class="swiper-slide slider-link">
+                    <a href="#" data-content="Desserts">Desserts</a>
+                  </div>
+                  <div class="swiper-slide slider-link">
+                    <a href="#" data-content="Alkoholfreie-Getränke">Alkoholfreie Getränke</a>
+                  </div>
+                  <div class="swiper-slide slider-link">
+                    <a href="#" data-content="Alkoholische-Getränke">Alkoholische Getränke</a>
                   </div>
                 </div>
               </div>
@@ -1968,8 +1978,7 @@
             <div class="main-products-wrapper white-block">
               <div class="products-list-container is-mobile">
                 <div class="products-list-div">
-                  <div class="Antipasti">
-                    <div class="product-row">
+                    <div class="product-row product-index" style="top: 0px;" id="Antipasti">
                       <div class="product-list-category-header-container">
                         <div class="image-mode-container">
                           <span
@@ -2120,9 +2129,7 @@
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="Salate">
-                    <div class="product-row" style="top: 710px;">
+                    <div class="product-row product-index" style="top: 710px;" id="Salate">
                       <div class="product-list-category-header-container">
                         <div class="image-mode-container">
                           <span
@@ -2273,9 +2280,7 @@
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="Pizzabrötchen">
-                    <div class="product-row" style="top: 1420px">
+                    <div class="product-row product-index" style="top: 1420px" id="Pizzabrötchen">
                       <div class="product-list-category-header-container">
                         <div class="image-mode-container">
                           <span
@@ -2426,9 +2431,7 @@
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="Pizza">
-                    <div class="product-row" style="top: 2130px">
+                    <div class="product-row product-index" style="top: 2130px" id="Pizza">
                       <div class="product-list-category-header-container">
                         <div class="image-mode-container">
                           <span
@@ -2579,9 +2582,7 @@
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="Pasta">
-                    <div class="product-row" style="top: 2840px">
+                    <div class="product-row product-index" style="top: 2840px" id="Pasta">
                       <div class="product-list-category-header-container">
                         <div class="image-mode-container">
                           <span
@@ -2732,9 +2733,7 @@
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="Desserts">
-                    <div class="product-row" style="top: 3550px">
+                    <div class="product-row product-index" style="top: 3550px" id="Desserts">
                       <div class="product-list-category-header-container">
                         <div class="image-mode-container">
                           <span
@@ -2885,9 +2884,7 @@
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="Alkoholfreie-Getränke">
-                    <div class="product-row" style="top: 4260px">
+                    <div class="product-row product-index" style="top: 4260px" id="Alkoholfreie-Getränke">
                       <div class="product-list-category-header-container">
                         <div class="image-mode-container">
                           <span
@@ -3038,9 +3035,7 @@
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="Alkoholische-Getränke">
-                    <div class="product-row" style="top: 4970px">
+                    <div class="product-row product-index" style="top: 4970px" id="Alkoholische-Getränke">
                       <div class="product-list-category-header-container">
                         <div class="image-mode-container">
                           <span
@@ -3191,7 +3186,6 @@
                         </div>
                       </div>
                     </div>
-                  </div>
                   <div class="last-sec-main-content">
                     <div class="product-row" style="top: 5680px;">
                       <div style="overflow: auto;">
@@ -3264,6 +3258,7 @@
           </div>
         </div>
       </div>
+      <!-- end mobile and tablet mode -->
     </div>
     <script src="js/all.min.js"></script>
     <script src="js/jquery-1.11.3.min.js"></script>

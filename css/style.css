@@ -1216,6 +1216,10 @@ body .container {
     width: 100%;
 }
 
+.mobile-homepage-categories .item:hover .title{
+    background: #fff;
+}
+
 .mobile-homepage-delivery .list {
     align-items: center;
     display: flex;
@@ -1228,6 +1232,11 @@ body .container {
     color: #fff;
     font-size: 18px;
     width: 100%;
+    cursor: default;
+}
+
+.mobile-homepage-delivery .item:hover {
+    color: #007333;
 }
 
 .mobile-view .footer .footer-wrapper{
@@ -1249,6 +1258,7 @@ body .container {
 }
 
 .main-content-mobile .branch-info .logo {
+    cursor: pointer;
     flex: 1 0 100%;
     margin: 0 0 10px;
     align-items: center;
@@ -1361,10 +1371,13 @@ body .container {
     padding: 0 30px;
     text-align: center;
     width: fit-content;
+}
+
+.category-slider .swiper-wrapper .slider-link a{
     color: #fff;
 }
 
-.category-slider .slider-link-active {
+.category-slider .slider-link a.active {
     color: #00f06c !important;
 }
 
@@ -1404,7 +1417,6 @@ body .container {
 .product-row{
     position: absolute;
     left: 0px;
-    top: 0px;
     height: 110px;
     width: 100%;
 }
