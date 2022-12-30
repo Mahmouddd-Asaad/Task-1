@@ -47,10 +47,11 @@ $(function () {
 
     $('.products-list-container').scroll(function(){
         $('.product-index').each(function(){
-            var ddtop = $(this).css('top')
-            if($('.main-products-wrapper').scrollTop() > ddtop){
-                console.log('true')
-            }else{console.log($(this).css('top'))}
+            console.log($(this).attr('id'))
         });
     });
+
+    $('.menu-toggle-btn').on('click',function(){
+        $('.menu-expanded').toggle();
+    })
 });
